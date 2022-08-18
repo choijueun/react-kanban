@@ -18,8 +18,14 @@ def tags_update():
     
     insert = ''
     for d in data:
-        insert += """,({0}, '{1}', '{2}', '{3}', '{4}')
-        """.format( d['idx'], 'project', d['value'], d['label'], d['color'] )
+        insert += """,({idx}, '{type}', '{code}', '{label}', '{color}')
+        """.format( 
+            idx = d['idx'].encode('utf-8'), 
+            type = 'project', 
+            code = d['value'].encode('utf-8'), 
+            label = d['label'].encode('utf-8'), 
+            color = d['color'].encode('utf-8') 
+        )
     insert = insert.replace(',', '', 1)
     
     sql = """
