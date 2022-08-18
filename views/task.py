@@ -84,14 +84,19 @@ def task_update():
     date = data.get('date', '')
     
     set = ''
+    params = {'idx': str(idx)}
     if name:
-        set += ",task_name = '%s' " % name
+        set += ",task_name = %(name)s "
+        params['name'] = name.encode('utf-8')
     if tags:
-        set += ",task_tags = '%s' " % tags
+        set += ",task_tags = %(tags)s "
+        params['tags'] = tags.encode('utf-8')
     if status:
-        set += ",task_status = '%s' " % status
+        set += ",task_status = %(status)s "
+        params['status'] = status.encode('utf-8')
     if date:
-        set += ",task_date = '%s' " % date
+        set += ",task_date = %(date)s "
+        params['date'] = date.encode('utf-8')
     set = set.replace(',', '', 1)
     
     sql = """
@@ -99,7 +104,6 @@ def task_update():
         SET {}
         WHERE no = %(idx)s
     """.format(set)
-    params = {'idx': str(idx)}
 
     try:
         db = adb.Adb()
