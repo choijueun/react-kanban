@@ -1,0 +1,10 @@
+.task-setting .task-setting-btn {
+    margin-left: 20px;
+}
+.task-setting-modal .task-setting-tabnav li {
+    cursor: pointer;
+}
+.task-setting-modal .task-setting-footer {
+    display: flex;
+    justify-content: space-between;
+}

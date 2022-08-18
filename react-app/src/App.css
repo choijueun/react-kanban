@@ -1,0 +1,7 @@
+.App {
+    width: fit-content;
+    margin: 20px auto;
+}
+.badge {
+    cursor: pointer;
+}

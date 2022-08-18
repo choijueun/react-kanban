@@ -1,0 +1,55 @@
+.task-card {
+    width: 400px;
+    margin: 10px;
+}
+.task-card .card-body {
+    padding: 10px 16px;
+}
+.task-card .card-body .card-title {
+    margin: 2px 0;
+}
+.task-card .card-footer {
+    padding: 2px 16px;
+}
+
+/* TAG */
+.task-card .badge           { margin-right: 5px; }
+/* .task-card .badge.project-0 { background-color: var(--badge-project-0) !important } */
+/* .task-card .badge.project-1 { background-color: var(--badge-project-1) !important } */
+/* .task-card .badge.project-2 { background-color: var(--badge-project-2) !important } */
+.task-card .badge.project-3 { background-color: var(--badge-project-3) !important }
+.task-card .badge.project-4 { background-color: var(--badge-project-4) !important }
+.task-card .badge.project-5 { background-color: var(--badge-project-5) !important }
+.task-card .badge.project-6 { background-color: var(--badge-project-6) !important }
+.task-card .badge.project-7 { background-color: var(--badge-project-7) !important }
+.task-card .badge.project-8 { background-color: var(--badge-project-8) !important }
+.task-card .badge.project-9 { background-color: var(--badge-project-9) !important }
+.task-card .badge.project-10 { background-color: var(--badge-project-10) !important }
+.task-card .badge.project-11 { background-color: var(--badge-project-11) !important }
+.task-card .badge.project-12 { background-color: var(--badge-project-12) !important }
+.task-card .badge.project-13 { background-color: var(--badge-project-13) !important }
+
+.task-card .card-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.task-card .card-footer .badge {
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.task-card .card-footer .task-option-toggle {
+    background-color: transparent !important;
+    border-radius: 100%;
+}
+
+.task-blank {
+    display: none;
+    width: 300px; 
+    height: 110px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, .02);
+    border: 2px dashed rgba(0, 0, 0, .06);
+    border-radius: 5px; 
+}

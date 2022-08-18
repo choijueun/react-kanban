@@ -1,0 +1,46 @@
+#todo-list .card {
+    border: 2px solid rgba(34, 104, 170, .2);
+    background-color: rgb(250, 253, 255);
+}
+#doing-list .card {
+    border: 2px solid rgba(185, 133, 0, .2);
+    background-color: rgb(255, 255, 250);
+}
+#done-list .card {
+    border: 2px solid rgba(0, 105, 54, .2);
+    background-color: rgb(250, 255, 250);
+}
+
+.task-list {
+    min-width: 444px;
+    padding: 10px;
+    margin: 10px;
+}
+.task-list .card {
+    min-height: 50px;
+}
+.task-list .task-title {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.task-list .task-title .task-title-todo {
+    background-color: rgb(104, 204, 220) !important;
+}
+.task-list .task-title .task-title-doing {
+    background-color: rgb(255, 193, 7) !important;
+}
+.task-list .task-title .task-title-done {
+    background-color: rgb(25, 135, 84) !important;
+}
+.task-list .task-title .task-add {
+    /* background-color: #aaa !important; */
+    border: rgba(0,0,0,.2) 1px solid;
+    height: 22px;
+    padding: 0 6px;
+    border-radius: 7px;
+    font-size: small;
+    position: absolute;
+    right: 12px;
+}
