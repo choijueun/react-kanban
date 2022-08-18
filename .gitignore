@@ -1,2 +1,3 @@
 adb.py
 __pycache__
+*.tar.gz
