@@ -7,7 +7,6 @@ from threading import Lock
 import adb
 
 
-"""
 async_mode = None
 app = Flask(__name__, static_folder='react-app/build') # Change your react-app name 'my-react-app'
 app.config['SECRET_KEY'] = os.urandom(20)
@@ -23,16 +22,12 @@ def serve(path):
     else:
         return send_from_directory(app.static_folder, 'index.html')
 
-@app.route('/test', methods=['POST'])
-def test():
-    print(request.data)
-    return {'msg': 'Test endpoint return'}
 
 
-from info import *
+from views import *
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=8888, debug=True) # You can change port, host..
+    app.run(host='0.0.0.0', port=8338, debug=True) # You can change port, host..
 """
 
     
@@ -45,3 +40,4 @@ from views import *
 
 if __name__ == "__main__":
     app.run(host='localhost', port=8888, debug=True)
+"""
